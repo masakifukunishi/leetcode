@@ -1,4 +1,4 @@
-// Time complexity: O(n2)
+// Time complexity: O(n^2)
 // Space complexity: O(1)
 /**
  * @param {number[]} nums
