@@ -1,6 +1,6 @@
 // Follow up: Could you solve it without converting the integer to a string?
 
-// Time complexity: O(n^2)
+// Time complexity: O(n)
 // Space complexity: O(1)
 /**
  * @param {number} x
