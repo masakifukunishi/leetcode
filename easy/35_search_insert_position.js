@@ -21,3 +21,4 @@ const searchInsert = function (nums, target) {
   }
   return left;
 };
+console.log(searchInsert([1, 3, 5, 6, 7], 2));
