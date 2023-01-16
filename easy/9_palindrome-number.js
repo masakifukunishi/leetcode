@@ -6,17 +6,17 @@
  * @param {number} x
  * @return {boolean}
  */
-// const isPalindrome = (x) => {
-//   const stringX = String(x);
-//   for (let i = 0; i < Math.floor(stringX.length - 1) / 2; i++) {
-//     const front = stringX[i];
-//     const back = stringX[stringX.length - 1 - i];
-//     if (front !== back) {
-//       return false;
-//     }
-//   }
-//   return true;
-// };
+const isPalindrome1 = (x) => {
+  const stringX = String(x);
+  for (let i = 0; i < Math.floor(stringX.length - 1) / 2; i++) {
+    const front = stringX[i];
+    const back = stringX[stringX.length - 1 - i];
+    if (front !== back) {
+      return false;
+    }
+  }
+  return true;
+};
 
 // Time complexity: O(log10(n))
 // Space complexity: O(1)
@@ -24,7 +24,7 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome = (x) => {
+const isPalindrome2 = (x) => {
   if (x < 0) return false;
   let number = x;
   let reversed = 0;
@@ -34,4 +34,4 @@ const isPalindrome = (x) => {
   }
   return x === reversed;
 };
-console.log(isPalindrome(121));
+console.log(isPalindrome1(121));
