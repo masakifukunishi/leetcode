@@ -6,7 +6,7 @@
  * @param {number} x
  * @return {boolean}
  */
-// const isPalindrome = function (x) {
+// const isPalindrome = (x) => {
 //   const stringX = String(x);
 //   for (let i = 0; i < Math.floor(stringX.length - 1) / 2; i++) {
 //     const front = stringX[i];
@@ -24,7 +24,7 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome = function (x) {
+const isPalindrome = (x) => {
   if (x < 0) return false;
   let number = x;
   let reversed = 0;
