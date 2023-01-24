@@ -20,7 +20,7 @@ const hasCycle1 = (head) => {
  * @param {ListNode} head
  * @return {boolean}
  */
-const hasCycle = (head) => {
+const hasCycle2 = (head) => {
   let fast = head;
   let slow = head;
   while (fast && fast.next) {
