@@ -13,3 +13,20 @@ const hasCycle1 = (head) => {
   }
   return false;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(1)
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
+const hasCycle = (head) => {
+  let fast = head;
+  let slow = head;
+  while (fast && fast.next) {
+    fast = fast.next.next;
+    slow = slow.next;
+    if (fast == slow) return true;
+  }
+  return false;
+};
