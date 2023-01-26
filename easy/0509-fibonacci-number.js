@@ -18,7 +18,7 @@ const fib1 = (n) => {
  */
 const fib2 = (n) => {
   let fibSequence = [0, 1];
-  for (let i = 2; i < n + 1; i++) {
+  for (let i = 2; i <= n; i++) {
     fibSequence.push(fibSequence[i - 1] + fibSequence[i - 2]);
   }
   return fibSequence[n];
