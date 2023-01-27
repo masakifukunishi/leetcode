@@ -8,7 +8,7 @@
  */
 const isPalindrome1 = (x) => {
   const stringX = String(x);
-  for (let i = 0; i < Math.floor(stringX.length - 1) / 2; i++) {
+  for (let i = 0; i < Math.floor(stringX.length / 2); i++) {
     const front = stringX[i];
     const back = stringX[stringX.length - 1 - i];
     if (front !== back) {
