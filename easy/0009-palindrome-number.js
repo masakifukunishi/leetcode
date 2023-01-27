@@ -6,16 +6,13 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome1 = (x) => {
+const isPalindrome = (x) => {
   const stringX = String(x);
-  for (let i = 0; i < Math.floor(stringX.length / 2); i++) {
-    const front = stringX[i];
-    const back = stringX[stringX.length - 1 - i];
-    if (front !== back) {
-      return false;
-    }
+  let reversed = "";
+  for (let i = stringX.length - 1; i >= 0; i--) {
+    reversed += stringX[i];
   }
-  return true;
+  return reversed === stringX;
 };
 
 // Time complexity: O(log10(n))
