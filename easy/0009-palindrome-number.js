@@ -6,7 +6,7 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome = (x) => {
+const isPalindrome1 = (x) => {
   const stringX = String(x);
   let reversed = "";
   for (let i = stringX.length - 1; i >= 0; i--) {
