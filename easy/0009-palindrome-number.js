@@ -1,7 +1,7 @@
 // Follow up: Could you solve it without converting the integer to a string?
 
 // Time complexity: O(n)
-// Space complexity: O(1)
+// Space complexity: O(n)
 /**
  * @param {number} x
  * @return {boolean}
@@ -16,7 +16,7 @@ const isPalindrome1 = (x) => {
 };
 
 // Time complexity: O(log10(n))
-// Space complexity: O(1)
+// Space complexity: O(n)
 /**
  * @param {number} x
  * @return {boolean}
