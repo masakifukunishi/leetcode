@@ -1,18 +1,20 @@
-// Time complexity: O(n)
-// Space complexity: O(n)
 /**
  * @param {string} pattern
  * @param {string} s
  * @return {boolean}
  */
 const wordPattern = (pattern, s) => {
-  const map = {};
+  const hash = {};
   const words = s.split(" ");
+  if (pattern.length !== words.length) return false;
   for (let i = 0; i < pattern.length; i++) {
-    if (map[pattern[i]] == undefined) {
-      map[pattern[i]] = words[i];
+    const char = pattern[i];
+    const word = words[i];
+    if (hash[char] === undefined) {
+      if (Object.values(hash).indexOf(word) !== -1) return false;
+      hash[char] = word;
     }
-    if (map[pattern[i]] !== words[i]) {
+    if (hash[char] !== word) {
       return false;
     }
   }
